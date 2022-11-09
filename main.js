@@ -53,10 +53,11 @@ todoForm.addEventListener('submit', function(event){
                  
                     if(div2List[i].style.textDecoration === "line-through"){
                     div2List[i].remove();
+                    
                     }
                     
                 }
-
+                alert('Tasks have been completed')
 
             })
 
