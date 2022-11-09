@@ -27,8 +27,21 @@ todoForm.addEventListener('submit', function(event){
  
          div2List2[i].style.textDecoration = "line-through";
          div2List2[i].style.opacity = ".5"
+         var audio = new Audio('click.mp3');
+         audio.play();
          
      })
+
+     div2List2[i].addEventListener('mouseover', function(){
+ 
+        div2List2[i].style.background = "lightpink"
+        
+    })
+    div2List2[i].addEventListener('mouseout', function(){
+ 
+        div2List2[i].style.background = "white"
+        
+    })
      
     }
     
@@ -41,6 +54,7 @@ todoForm.addEventListener('submit', function(event){
         for (let i = 0; i < div2List.length; i++){
          
             div2List[i].remove();
+            
             
             
         }
