@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <div class="header">
     <h1 id="title">To Do DOM List</h1>
+    </div>
 </head>
 
 <body>
@@ -14,20 +16,20 @@
     <form id="todolist">
 
     <div id ="div1">
-        <label> Enter a to do item</label>
+        <label> ENTER A TO-DO ITEM</label>
         <input id="todoinput" type="text">
     </div>
 
     
-    <input type="submit"> 
+    <input id="submit" type="submit" value="add"> 
 </form>
 
-<button id="remove">Remove All</button>
+<div id="flexme"><button id="remove">Remove All</button>
+<button id="removeAll">Remove Completed Tasks</button>
+</div>
 <div id ="div2">
     <ul>
-     <li>
-
-     </li>
+   
     </ul>    
 </div>
     <script src="main.js"></script>

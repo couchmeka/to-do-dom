@@ -1,5 +1,38 @@
 body {
 
-    background-color: pink;
+    background-color: rgb(239, 206, 211);
     color: purple;
+    
 }
+
+#submit {
+    background-color: purple;
+    color: aliceblue;
+    display: flex;
+    
+}
+
+#remove{
+    background-color: purple;
+    color: aliceblue;
+    display: flex;
+    
+}
+
+#removeAll{
+    background-color: purple;
+    color: aliceblue;
+    display: flex;
+    display: flex
+
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+ 
