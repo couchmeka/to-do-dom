@@ -1,10 +1,9 @@
 let todoForm = document.querySelector('#todolist');
 let todoinput = document.querySelector('#todoinput');
 let ul = document.querySelector('ul');
-let li = document.querySelector('li');
 let removeButton = document.querySelector('#remove');
 let removeComplete = document.querySelector('#removeAll');
-let div2 = document.querySelector('div2')
+
 
 
 todoForm.addEventListener('submit', function(event){
@@ -17,49 +16,54 @@ todoForm.addEventListener('submit', function(event){
     newLI.innerText = todoinput.value;
     newLI.style.border = "dotted";
     newLI.style.borderColor = "purple";
-    newLI.style.background = "white"
-    newLI.style.padding ="10px"
+    newLI.style.background = "white";
+    newLI.style.padding ="10px";
   
-    let div2List2 = document.querySelectorAll('#div2 li')
-    for (let i = 0; i < div2List2.length; i++) {
+    
+   
      
-     div2List2[i].addEventListener('click', function(){
- 
-         div2List2[i].style.textDecoration = "line-through";
-         div2List2[i].style.opacity = ".5"
+     newLI.addEventListener('click', function(){
+        
+        if(newLI.style.textDecoration === "line-through"){
+            newLI.style.textDecoration = "";
+            newLI.style.opacity = "";
+
+        } else {
+         newLI.style.textDecoration = "line-through";
+         newLI.style.opacity = ".5";
          var audio = new Audio('click.mp3');
          audio.play();
-         
+        
+        }
      })
 
-     div2List2[i].addEventListener('mouseover', function(){
+     newLI.addEventListener('mouseover', function(){
  
-        div2List2[i].style.background = "lightyellow"
+        newLI.style.background = "lightyellow";
         
     })
-    div2List2[i].addEventListener('mouseout', function(){
+    newLI.addEventListener('mouseout', function(){
  
-        div2List2[i].style.background = "white"
+        newLI.style.background = "white";
         
     })
      
-    }
+    
     
     });
     
-
+//remove button
     removeButton.addEventListener('click', function(){
 
     let div2List = document.querySelectorAll('#div2 li');
         for (let i = 0; i < div2List.length; i++){
          
-            div2List[i].remove();
-            
-            
+            div2List[i].remove();      
             
         }
     })
 
+    //remove all
     removeComplete.addEventListener('click', function(){
 
     let div2List = document.querySelectorAll('#div2 li');
