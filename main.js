@@ -34,7 +34,7 @@ todoForm.addEventListener('submit', function(event){
 
      div2List2[i].addEventListener('mouseover', function(){
  
-        div2List2[i].style.background = "lightpink"
+        div2List2[i].style.background = "lightyellow"
         
     })
     div2List2[i].addEventListener('mouseout', function(){
@@ -60,19 +60,21 @@ todoForm.addEventListener('submit', function(event){
         }
     })
 
-        removeComplete.addEventListener('click', function(){
+    removeComplete.addEventListener('click', function(){
 
-            let div2List = document.querySelectorAll('#div2 li');
-                for (let i = 0; i < div2List.length; i++){
+    let div2List = document.querySelectorAll('#div2 li');
+        for (let i = 0; i < div2List.length; i++){
                  
-                    if(div2List[i].style.textDecoration === "line-through"){
-                    div2List[i].remove();
+        if(div2List[i].style.textDecoration === "line-through")
+        {
+        
+            div2List[i].remove();
                     
-                    }
+        }
                     
-                }
-                alert('Tasks have been completed')
+        }
+    alert('Tasks have been completed')
 
-            })
+     })
 
     
