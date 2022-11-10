@@ -81,4 +81,10 @@ todoForm.addEventListener('submit', function(event){
 
      })
 
+
+
+     //for the clock
+     
+
     
+//not mine this is for animation 
